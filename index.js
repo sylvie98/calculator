@@ -45,11 +45,10 @@
         console.log('perfect amount of sleep');
       } else if (actualSleepHours > idealSleepHours) {
         console.log('the user got more sleep than needed');
-      } else {
-        console.log('the user should get some rest');
-      }
-      if (actualSleepHours < idealSleepHours) {
-        console.log('You got ' + (idealSleepHours - actualSleepHours) + ' hour(s) less sleep than you needed this week. Get some rest.');
+      } 
+      else{
+        const debtSleep =idealSleepHours - actualSleepHours
+        console.log('You got ' + debtSleep + ' hour(s) less sleep than you needed this week. Get some rest.');
       }
    
 }
